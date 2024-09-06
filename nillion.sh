@@ -18,10 +18,10 @@ sudo docker run hello-world
 
 echo "5. Creating directory for nillion/accuser and pulling the image..."
 mkdir -p nillion/accuser
-docker pull nillion/retailtoken-accuser:v1.0.0
+docker pull nillion/retailtoken-accuser:v1.0.1
 
 echo "6. Running the container to initialise accuser..."
-docker run -v $(pwd)/nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 initialise
+docker run -v $(pwd)/nillion2/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.1 initialise
 
 echo "7. Extracting address and pub_key from credentials.json..."
 CREDENTIALS_FILE="./nillion2/accuser/credentials.json"
